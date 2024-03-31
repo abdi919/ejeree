@@ -1,0 +1,45 @@
+footer {
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 20px;
+  text-align: center; /* Center the content */
+  position: fixed; /* Stick the footer to the bottom */
+  bottom: 0;
+  width: 100%; /* Span the full width */
+}
+
+footer ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin: 0; /* Remove default margins */
+}
+
+footer li {
+  display: inline-block; /* Display list items inline */
+  margin: 0 10px;  /* Add space between links */
+}
+
+footer a {
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Black color for links */
+}
+
+footer a:hover {
+  color: #333; /* Change link color on hover */
+}
+
+
+
+@media(min-width:368px) {
+  .mmm{
+    display: none;
+  }
+  hr{
+    display: none;
+  }
+}
+
+@media(max-width:368px) {
+  .nnn{
+    display: none;
+
+  }}

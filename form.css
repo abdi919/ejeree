@@ -1,0 +1,42 @@
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color:transparent; 
+}
+.form{
+  margin-top: 200px;
+  width: 500px;
+  padding: 6px;      
+}
+input,textarea{
+  width: 100%;
+  padding: 6px;
+  outline: none;
+  border: 1px solid #00a6ff;
+  margin: 6px 0px;
+  border-radius: 20px ;
+  color: #388fe5;
+}
+
+input::-webkit-input-placeholder{ color: #00a6ff;}
+
+textarea::-webkit-input-placeholder{
+  color: #00a6ff;
+}
+#btn{
+  border: none;
+  color: #fff;
+  background-color: #00a6ff;
+  width: 110px;
+  padding: 6px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#btn:hover{
+color:#00a6ff;
+background-color:#fff;
+}
+

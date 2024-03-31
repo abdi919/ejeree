@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>contact</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+
+  <link rel="stylesheet" href="one.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="footer.css">
+  
+  
+</head>
+<body id="ttt">
+                        <!-- this nav bar -->
+    <header>
+      <div class="navbar">
+            <div class="logo">
+              <a href="#">ES SCHOOL</a>
+            </div>
+        <ul class="links">
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="about.html">About Us</a></li> 
+            <li> <a href="contact.html">Contact Us</a></li>
+            <li> <a href="our.html">Our student data</a></li>
+            <li> <a href="link.html">Reference link for student</a></li>
+            <li> <button class="xy" onclick="okk()"> dark </button></li>
+          </ul>
+                <a href="dev.html" class="action_btn">developed</a>
+                    <div class="toggle_btn">
+                        <i class="fa-solid fa-bars" ></i>
+                    </div>
+      </div>
+
+       <div class="dropdown_menu open">
+        <li> <a href="index.html">Home</a></li>
+        <li> <a href="about.html">About Us</a></li> 
+        <li> <a href="contact.html">Contact Us</a></li>
+        <li> <a href="our.html">Our student data</a></li>
+        <li> <a href="link.html">Reference link for student</a></li>
+                <li> <button id="sss" class="xy" onclick="okk()"> dark </button> </li>
+                <li> <a href="dev.html" class="aaction_btn">Developed</a> </li>
+                </div>
+      </header>
+
+        <script src="one.js"></script>
+    </header>
+    </header>
+
+    <section>
+    <div class="form">
+         <form  method="post">
+            <input type="text" placeholder="Name" id="name" autocomplete="off">
+            <input type="email" placeholder="Email" id="email" autocomplete="off" >
+            <input type="text" placeholder="subject" id="subject" autocomplete="off">
+            <textarea  id="message" placeholder="Message" cols="30" rows="10"></textarea>
+            <button id="btn">Send</button>
+            <br> <br>
+         </form>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+         var btn = document.getElementById('btn');
+         btn.addEventListener('click' , function(e) {
+          e.preventDefault()
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var subject = document.getElementById('subject').value;
+          var message = document.getElementById('message').value;
+          var body = 'name: '+name + '<br/> email: ' + email + '<br/>  subject: ' +subject + '<br/> message: '+ message;
+                        
+                        Email.send({
+                      SecureToken : "cbd77f5a-cd60-4154-8b9a-f248102292de",
+                      To : 'abdigemechu919@gmail.com',
+                      From : "abdiwarku549@gmail.com",
+                      Subject : "contact message",
+                      Body : body
+                  }).then(
+                    message => alert(message)
+                  );
+         })
+      </script>
+      </div>
+    </div>
+  </section>
+
+
+<footer>
+  <p>&copy; 2024 All Rights Reserved</p>
+  <ul>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      </ul>
+</footer> 
+</body>
+</html>
