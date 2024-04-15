@@ -110,13 +110,13 @@ header {
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  transition: 1s;
+  transition: 3s;
 }
 
 .dropdown_menu {
   height: 350px;
   background-color: #a0a0a031;
-  transition: 1s;
+  transition: 3s;
 }
 
 .dropdown_menu li {
